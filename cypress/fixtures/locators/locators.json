@@ -1,0 +1,10 @@
+{
+    "login": {
+        "username": "#username",
+        "password": "#password",
+        "continueButton": ".c4882ea5b",
+        "passwordError": "",
+        "emailError": ""
+    }
+
+}

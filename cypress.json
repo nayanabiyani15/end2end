@@ -1,0 +1,9 @@
+{
+    "baseUrl": "https://qa3.acceptance.wonderkind.cloud/",
+    "defaultCommandTimeout": 1000,
+    "pageLoadTimeout": 10000,
+    "requestTimeout": 10000,
+    "video": false,
+    "chromeWebSecurity": false,
+    "modifyObstructiveCode": false
+}
