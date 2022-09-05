@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import './helper/login'
+import './helper/campaign'
 
 Cypress.Server.defaults({
     delay: 500,
@@ -23,19 +24,6 @@ Cypress.Server.defaults({
     ignore: (xhr) => {
       // return true for ignoring xhr else return false
       return true;
-    }
-  })
-  
-  const addContext = require('mochawesome/addContext')
-  
-  Cypress.on('test:after:run', (test, runnable) => {
-    if (test.state === 'failed') {
-      const screenshotFileName = `${runnable.parent.title} -- ${test.title} (failed).png`
-      const videoFileName = `${Cypress.spec.name}.mp4`
-      addContext({ test }, "Below is the attached screenshot of failed scenario. If not visible then it might have failed in before hook")
-      addContext({ test }, `assets/failedScreenshots/${Cypress.spec.name}/${screenshotFileName}`)
-      addContext({ test }, "Below is the attached video of complete failed spec (not just scenario)")
-      addContext({ test }, `assets/failedVideos/${videoFileName}`)
     }
   })
   

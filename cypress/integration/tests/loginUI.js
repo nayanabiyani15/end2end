@@ -7,9 +7,10 @@ describe("Test Login Functionality", () => {
 
     context('Check successful login scenarios', function () {    
 
-        it("Login should be successful", () => {
+        it("User should login successfully with given user details", () => {
             cy.login('dev@wonderkind.com','Wonderkids!42!')
             cy.url().should('eq', Cypress.config().baseUrl+page.OVERVIEW)
+           
         });
     });
 
@@ -21,9 +22,18 @@ describe("Test Login Functionality", () => {
         });
 
         it("should give error when username not entered", () => {
-            cy.setLoginPassword("afa").clickButton(buttons.LOGIN);
+            cy.setLoginPassword("afa",).clickButton(buttons.LOGIN);
             cy.get(login.emailError).should("have.text","Please fill in this field");
         });
     })
+});
 
+describe("Test logout Functionality", () => {
+    context('User should logout properly', function () {    
+
+        it("User should logout", () => {
+            cy.logout();
+        });
+
+    })
 });

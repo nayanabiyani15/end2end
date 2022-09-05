@@ -5,5 +5,8 @@
     "requestTimeout": 10000,
     "video": false,
     "chromeWebSecurity": false,
-    "modifyObstructiveCode": false
+    "modifyObstructiveCode": false,
+    "experimentalStudio": true,
+	"viewportWidth": 1600,
+	"viewportHeight": 1200
 }

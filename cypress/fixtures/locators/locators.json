@@ -2,9 +2,27 @@
     "login": {
         "username": "#username",
         "password": "#password",
-        "continueButton": ".c4882ea5b",
         "passwordError": "",
-        "emailError": ""
+        "emailError": "",
+        "userprofile": ".user-tools .account-tooltip .action-sheet div:nth-child(1)",
+        "logout": ".dropdown-arrow-top div:nth-child(4)"
+    },
+    "campaign":{
+        "create": ".btn-primary",
+        "edit": "",
+        "selectWorkspace": ".workspace-clickable",
+        "searchWorkspace": ".search-container",
+        "filterDraft": ".status-filters div:nth-child(3)",
+        "listcampaign": ".campaigns-list li:nth-child(1)",
+        "bottomBar": ".campaign-bottom-bar",
+        "createGSAds": " New Google Search Ad ",
+        "googleSearchSection": "#google-search"
+    },
+    "GSadData":{
+        "header1": "input[placeholder=\"Type headline 1 \"]",
+        "header2": "input[placeholder=\"Type headline 2 \"]",
+        "header3": "input[placeholder=\"Type headline 3 \"]",
+        "description1": "#0.13198386700122833",
+        "description2": ".descriptions textarea:nth-child(2)"
     }
-
 }
